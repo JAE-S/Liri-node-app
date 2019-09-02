@@ -4,6 +4,11 @@
 // File System 
     var fs = require("fs"); 
 
+// Axios 
+    axios = require('axios');
+   
+    var moment = require('moment');
+ 
 // Spotify Variables 
     var keys = require("./keys.js");
     var Spotify = require('node-spotify-api');
@@ -54,6 +59,43 @@
             // 1. Name of the venue
             // 2. Venue location
             // 3. Date of the Event (use moment to format this as "MM/DD/YYYY")
+        
+        function concertInfo(input){
+            axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp").then(function(response){
+             
+                // If the axios was successful.. 
+                // Then log the response from the site
+               for (var i = 0; i < response.data.length; i++) {
+                var info = response.data
+
+                var date = info[i].datetime;
+
+                var concert = "==============================================================" + 
+                "\n Artist: " + info[i].lineup +
+                "\n Venue Name: " + info[i].venue.name + 
+                "\n Venue Location: " + info[i].venue.city + 
+                "\n Date of the Event: " + moment(date).format("LLLL");
+            
+                console.log(concert);
+                }
+            })
+           
+            .catch(function(error) {
+                if (error.response){
+                    console.log(error.info); 
+                    console.log(error.info[i].lineup); 
+                    console.log(error.info[i].venue.name);
+                    console.log(error.info[i].venue.city)
+                    console.log(error.info[i].datetime);
+                } else if (error.request) {
+                    console.log(error.request);
+                } else {
+                    console.log("Error", error.message); 
+                }
+                console.log(error.config);
+            });
+
+        }
 
     // 2. node liri.js spotify-this-song '<song name here>'
         // This will show the following information about the song in your terminal/bash window
