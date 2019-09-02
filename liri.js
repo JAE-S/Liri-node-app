@@ -1,15 +1,51 @@
-require("dotenv").config();
+// Get and Set Environmental Varibales to the Global process.env object
+    require("dotenv").config();
 
-var keys = require("./keys.js");
+// File System 
+    var fs = require("fs"); 
 
-var spotify = new spotify(keys.spotify);
-console.log(spotify);
+// Spotify Variables 
+    var keys = require("./keys.js");
+    var Spotify = require('node-spotify-api');
+    var spotify = new Spotify(keys.spotify);
+    console.log(spotify);
 
-// commands for LIRI BOT to take in 
+// User Input Variables 
+    var option = process.argv[2]
+    var input = process.argv[3]
+
+// Commands for LIRI BOT to take in 
     // 1. concert-this
     // 2. spotify-this-song
-    // 3. move-this
+    // 3. movie-this
     // 4. do-what-it-says
+
+    // Calls userInput function 
+    userInput(option, input);
+
+    // Switch statement based on Liri commands 
+    function userInput(option, input){
+        switch (option) {
+            case 'concert-this':
+            concertInfo(input);
+            break; 
+           
+            case 'spotifiy-this-song': 
+            songInfo(input);
+            break; 
+           
+            case 'movie-this': 
+            movieInfo(input); 
+            break; 
+
+            case 'do-what-it-says':
+            showInfo();
+            break; 
+
+            default: 
+            console.log("Invalid");
+        }
+    }    
 
 // Each command should do: 
 
