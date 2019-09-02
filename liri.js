@@ -7,6 +7,7 @@
 // Axios 
     axios = require('axios');
    
+// Moment
     var moment = require('moment');
  
 // Spotify Variables 
@@ -17,7 +18,10 @@
 
 // User Input Variables 
     var option = process.argv[2]
-    var input = process.argv[3]
+    var action = process.argv[3]
+    var input = process.argv.splice(3).join(' ');
+    // console.log(action);
+
 
 // Commands for LIRI BOT to take in 
     // 1. concert-this
@@ -35,7 +39,7 @@
             concertInfo(input);
             break; 
            
-            case 'spotifiy-this-song': 
+            case 'spotify-this-song': 
             songInfo(input);
             break; 
            
@@ -67,13 +71,12 @@
                 // Then log the response from the site
                for (var i = 0; i < response.data.length; i++) {
                 var info = response.data
-
                 var date = info[i].datetime;
 
                 var concert = "==============================================================" + 
-                "\n Artist: " + info[i].lineup +
+                "\n Artist: " + input +
                 "\n Venue Name: " + info[i].venue.name + 
-                "\n Venue Location: " + info[i].venue.city + 
+                "\n Venue Location: " + info[i].venue.city + ", " + info[i].venue.country +
                 "\n Date of the Event: " + moment(date).format("LLLL");
             
                 console.log(concert);
@@ -82,10 +85,15 @@
            
             .catch(function(error) {
                 if (error.response){
+                    console.log("---------- DATA ERROR ----------"); 
                     console.log(error.info); 
+                    console.log("---------- LINEUP ERROR ----------"); 
                     console.log(error.info[i].lineup); 
+                    console.log("---------- VENUE NAME ERROR ----------"); 
                     console.log(error.info[i].venue.name);
+                    console.log("---------- VENUE CITY ERROR ----------"); 
                     console.log(error.info[i].venue.city)
+                    console.log("---------- ERROR ----------"); 
                     console.log(error.info[i].datetime);
                 } else if (error.request) {
                     console.log(error.request);
@@ -103,6 +111,44 @@
             // 2. The song's name
             // 3. A preview link of the song from Spotify
             // 4. The album that the song is from
+
+            function songInfo(input){
+            
+               
+
+                spotify
+                .search({ type: 'track', query: input})
+                .then(function(response) {
+                // console.log(response);
+                
+                for (var i = 0; i < 5; i++) {
+                    preview = response.tracks.items[i].preview_url;
+                    
+                    if (preview === null ){
+                       preview =  ("Preview unavailable. Copy the following link into a browser to view the album: " + response.tracks.items[i].album.uri) ;
+                    } else {
+                        preview = response.tracks.items[i].preview_url;
+                    }
+
+                    var spotifySearch = "==============================================================" + 
+                    "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
+                    "\n Song Title: " + response.tracks.items[i].name + 
+                    "\n Album Title: " + response.tracks.items[i].album.name +
+                    "\n Listen Here: " + preview;
+             
+                console.log(spotifySearch);
+                }
+                // console.log(response.tracks.items.length);
+                // console.log(response.tracks.items);
+                })
+            
+                .catch(function(err) {
+                console.log(err);
+                });
+
+
+        }
+
 
     // 3. If no song is provided then your program will default to "The Sign" by Ace of Base.
 
