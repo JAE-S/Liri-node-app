@@ -201,11 +201,24 @@
 
                 })
                
-            // } else {
+            } else {
 
-            //     axios.get("http://www.omdbapi.com/?t=" + input + "&apikeytrilogy").then(function(response){
-            //     comnsole.log(response); 
-            //     })
+                axios.get("http://www.omdbapi.com/?t=" + input + "&apikey=trilogy").then(function(response){
+                console.log(response.data); 
+
+                var movieSearch = "=================================================================================================================================" + 
+
+                "\n" + "\n Movie Title: " + (response.data.Title) +
+                "\n" + "\n Plot: " + (response.data.Plot) + 
+                "\n Actors: " + (response.data.Actors) + 
+                "\n IMDB Rating: " + (response.data.imdbRating) +
+                "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
+                "\n Language(s): " + (response.data.Language) + 
+                "\n Release Date: " + (response.data.Released) + 
+                "\n Production Location(s): " + (response.data.Country) + "\n";
+        
+                console.log(movieSearch);
+                })
 
                 .catch(function(err) {
                     console.log(err);
