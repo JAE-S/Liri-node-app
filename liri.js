@@ -114,40 +114,57 @@
 
             function songInfo(input){
             
-               
-
-                spotify
-                .search({ type: 'track', query: input})
-                .then(function(response) {
-                // console.log(response);
-                
-                for (var i = 0; i < 5; i++) {
-                    preview = response.tracks.items[i].preview_url;
+                if(!input){
+                    spotify
+                    .request('https://api.spotify.com/v1/tracks/6kWJvPfC4DgUpRsXKNa9z9')
+                    .then(function(response) {
+                        console.log(response);
+                        
+                        for (var a = 0; a < 1; a++){
+                        var spotifySearch = "=============================================================================================================================" + 
+                        "\n Artist(s): " + response.artists[0].name  +
+                        "\n Song Title: " + "The Sign " + 
+                        "\n Album Title: " + response.album.name +
+                        "\n Listen Here: " + response.preview_url;
                     
-                    if (preview === null ){
-                       preview =  ("Preview unavailable. Copy the following link into a browser to view the album: " + response.tracks.items[i].album.uri) ;
-                    } else {
-                        preview = response.tracks.items[i].preview_url;
-                    }
+                        console.log(spotifySearch);
 
-                    var spotifySearch = "==============================================================" + 
-                    "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
-                    "\n Song Title: " + response.tracks.items[i].name + 
-                    "\n Album Title: " + response.tracks.items[i].album.name +
-                    "\n Listen Here: " + preview;
-             
-                console.log(spotifySearch);
-                }
-                // console.log(response.tracks.items.length);
-                // console.log(response.tracks.items);
-                })
+                        }
+                    })
+                    
+                } else {
+
+                    spotify
+                    .search({ type: 'track', query: input})
+                    .then(function(response) {
+                        console.log(response);
+                        
+                        for (var i = 0; i < 5; i++) {
+                            preview = response.tracks.items[i].preview_url;
+                            
+                            if (preview === null ){
+                            preview =  ("Preview unavailable. Copy the following link into a browser to view the album: " + response.tracks.items[i].album.uri) ;
+                            } else {
+                                preview = response.tracks.items[i].preview_url;
+                            }
+
+                            var spotifySearch = "=============================================================================================================================" + 
+                            "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
+                            "\n Song Title: " + response.tracks.items[i].name + 
+                            "\n Album Title: " + response.tracks.items[i].album.name +
+                            "\n Listen Here: " + preview;
+                    
+
+                            console.log(spotifySearch);
+                        }
+                    })
             
-                .catch(function(err) {
-                console.log(err);
-                });
-
-
-        }
+                    .catch(function(err) {
+                        console.log(err);
+                    });
+                }
+           
+            }
 
 
     // 3. If no song is provided then your program will default to "The Sign" by Ace of Base.
