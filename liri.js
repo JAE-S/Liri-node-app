@@ -121,7 +121,7 @@
                         console.log(response);
                         
                         for (var a = 0; a < 1; a++){
-                        var spotifySearch = "=============================================================================================================================" + 
+                        var spotifySearch = "=================================================================================================================================" + 
                         "\n Artist(s): " + response.artists[0].name  +
                         "\n Song Title: " + "The Sign " + 
                         "\n Album Title: " + response.album.name +
@@ -148,7 +148,7 @@
                                 preview = response.tracks.items[i].preview_url;
                             }
 
-                            var spotifySearch = "=============================================================================================================================" + 
+                            var spotifySearch = "=================================================================================================================================" + 
                             "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
                             "\n Song Title: " + response.tracks.items[i].name + 
                             "\n Album Title: " + response.tracks.items[i].album.name +
@@ -166,7 +166,6 @@
            
             }
 
-
     // 3. If no song is provided then your program will default to "The Sign" by Ace of Base.
 
 
@@ -180,6 +179,39 @@
         // 6. Language of the movie.
         // 7. Plot of the movie.
         // 8. Actors in the movie.
+
+        function movieInfo(input) {
+            
+            if(!input){
+                axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&apikey=trilogy").then(function(response){
+                // console.log(response.data); 
+
+                var movieSearch = "=================================================================================================================================" + 
+                "\n" + "\n If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/" + ". It's on Netflix!" + "\n" +
+                "\n Movie Title: " + (response.data.Title) +
+                "\n Plot: " + (response.data.Plot) + 
+                "\n Actors: " + (response.data.Actors) + 
+                "\n IMDB Rating: " + (response.data.imdbRating) +
+                "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
+                "\n Language(s): " + (response.data.Language) + 
+                "\n Release Date: " + (response.data.Released) + 
+                "\n Production Location(s): " + (response.data.Country);
+        
+                console.log(movieSearch);
+
+                })
+               
+            // } else {
+
+            //     axios.get("http://www.omdbapi.com/?t=" + input + "&apikeytrilogy").then(function(response){
+            //     comnsole.log(response); 
+            //     })
+
+                .catch(function(err) {
+                    console.log(err);
+                });
+            }
+        }
      
     // 5. If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
         // 1. If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
