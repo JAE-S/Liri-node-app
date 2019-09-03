@@ -1,3 +1,6 @@
+
+
+
 // Get and Set Environmental Varibales to the Global process.env object
     require("dotenv").config();
 
@@ -9,25 +12,22 @@
    
 // Moment
     var moment = require('moment');
+
+// Chalk
+    const chalk = require('chalk');
+    const log = console.log;
  
 // Spotify Variables 
     var keys = require("./keys.js");
     var Spotify = require('node-spotify-api');
     var spotify = new Spotify(keys.spotify);
-    console.log(spotify);
+    // log(spotify);
 
 // User Input Variables 
     var option = process.argv[2]
     var action = process.argv[3]
     var input = process.argv.splice(3).join(' ');
-    // console.log(action);
-
-
-// Commands for LIRI BOT to take in 
-    // 1. concert-this
-    // 2. spotify-this-song
-    // 3. movie-this
-    // 4. do-what-it-says
+    // log(action);
 
     // Calls userInput function 
     userInput(option, input);
@@ -45,6 +45,7 @@
            
             case 'movie-this': 
             movieInfo(input); 
+
             break; 
 
             case 'do-what-it-says':
@@ -52,190 +53,217 @@
             break; 
 
             default: 
-            console.log("Invalid");
+            log("Invalid");
         }
     }    
 
-// Each command should do: 
-
-    // 1. node liri.js concert-this <artist/band name here>
-        // This will search the Bands in Town Artist Events API ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") for an artist and render the following information about each event to the terminal:
-            // 1. Name of the venue
-            // 2. Venue location
-            // 3. Date of the Event (use moment to format this as "MM/DD/YYYY")
-        
+        // node liri.js concert-this <artist/band name here>
         function concertInfo(input){
             axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp").then(function(response){
              
                 // If the axios was successful.. 
-                // Then log the response from the site
-               for (var i = 0; i < response.data.length; i++) {
-                var info = response.data
-                var date = info[i].datetime;
+                for (var i = 0; i < response.data.length; i++) {
+                    var info = response.data
+                    var date = info[i].datetime;
 
-                var concert = "==============================================================" + 
-                "\n Artist: " + input +
-                "\n Venue Name: " + info[i].venue.name + 
-                "\n Venue Location: " + info[i].venue.city + ", " + info[i].venue.country +
-                "\n Date of the Event: " + moment(date).format("LLLL");
-            
-                console.log(concert);
+                    // Stores data from the bandsintown API 
+                    var concert = 
+                        "\n" + "\n Artist: " + input +
+                        "\n Venue Name: " + info[i].venue.name + 
+                        "\n Venue Location: " + info[i].venue.city + ", " + info[i].venue.country +
+                        // Grabs the stored data from the date variable and reformats it using moment
+                        "\n Date of the Event: " + moment(date).format("LLLL") + "\n" + "\n"; 
+                    
+                    // Logs and separates the concert data colorfully with Chalk 
+                    log( chalk.yellowBright("==============================================================") + chalk.yellowBright(concert) + chalk.yellowBright("==============================================================" + "\n"));
+                
+                     // Appends the concert information to the log.txt file 
+                    fs.appendFileSync("log.txt", concert, (err) => {
+                   
+                        if (err) throw err;
+                   
+                    });
                 }
             })
            
-            .catch(function(error) {
-                if (error.response){
-                    console.log("---------- DATA ERROR ----------"); 
-                    console.log(error.info); 
-                    console.log("---------- LINEUP ERROR ----------"); 
-                    console.log(error.info[i].lineup); 
-                    console.log("---------- VENUE NAME ERROR ----------"); 
-                    console.log(error.info[i].venue.name);
-                    console.log("---------- VENUE CITY ERROR ----------"); 
-                    console.log(error.info[i].venue.city)
-                    console.log("---------- ERROR ----------"); 
-                    console.log(error.info[i].datetime);
-                } else if (error.request) {
-                    console.log(error.request);
-                } else {
-                    console.log("Error", error.message); 
-                }
-                console.log(error.config);
+            .catch(function(err) {
+                log(err);
             });
 
         }
 
-    // 2. node liri.js spotify-this-song '<song name here>'
-        // This will show the following information about the song in your terminal/bash window
-            // 1. Artist(s)
-            // 2. The song's name
-            // 3. A preview link of the song from Spotify
-            // 4. The album that the song is from
+         // node liri.js spotify-this-song '<song name here>'
+        function songInfo(input){
+        
+            // If no input data has been entered... default to The Sign by Ace of Base 
+            if(!input){
 
-            function songInfo(input){
-            
-                if(!input){
-                    spotify
-                    .request('https://api.spotify.com/v1/tracks/6kWJvPfC4DgUpRsXKNa9z9')
-                    .then(function(response) {
-                        console.log(response);
-                        
-                        for (var a = 0; a < 1; a++){
-                        var spotifySearch = "=================================================================================================================================" + 
-                        "\n Artist(s): " + response.artists[0].name  +
-                        "\n Song Title: " + "The Sign " + 
-                        "\n Album Title: " + response.album.name +
-                        "\n Listen Here: " + response.preview_url;
+                spotify
+                 // The request method for the spotify API for the id of The Sign by Ace of Base 
+                .request('https://api.spotify.com/v1/tracks/6kWJvPfC4DgUpRsXKNa9z9')
+                .then(function(response) {
+                    // log(response);
                     
-                        console.log(spotifySearch);
+                    // This function will only run once 
+                    for (var a = 0; a < 1; a++){
 
-                        }
-                    })
+                         // Stores data from the Spotify API 
+                        var spotifySearch = 
+                            "\n" + "\n Artist(s): " + response.artists[0].name  +
+                            "\n Song Title: " + "The Sign " + 
+                            "\n Album Title: " + response.album.name +
+                            "\n Listen Here: " + response.preview_url + "\n" + "\n";;
                     
-                } else {
+                        // Logs and separates the song data colorfully with Chalk
+                        log( chalk.cyanBright.bold("----------------------------------------------------------------------------------------------------------------------------") + chalk.cyan(spotifySearch) + chalk.cyanBright.bold("----------------------------------------------------------------------------------------------------------------------------") + "\n");
 
-                    spotify
-                    .search({ type: 'track', query: input})
-                    .then(function(response) {
-                        console.log(response);
-                        
-                        for (var i = 0; i < 5; i++) {
-                            preview = response.tracks.items[i].preview_url;
+                        // Appends the song's information to the log.txt file 
+                        fs.appendFileSync("log.txt", spotifySearch, (err) => {
                             
-                            if (preview === null ){
-                            preview =  ("Preview unavailable. Copy the following link into a browser to view the album: " + response.tracks.items[i].album.uri) ;
-                            } else {
-                                preview = response.tracks.items[i].preview_url;
-                            }
+                            if (err) throw err;
 
-                            var spotifySearch = "=================================================================================================================================" + 
-                            "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
+                        });
+                    }
+                })
+
+            // If input data is entered... run the following code
+            } else {
+            
+                spotify
+                 // Search parameters 
+                .search({ type: 'track', query: input})
+                .then(function(response) {
+                // log(response);
+                    
+                    // This function will return the 5 best match to the user's input 
+                    for (var i = 0; i < 5; i++) {
+
+                        preview = response.tracks.items[i].preview_url;
+                        // If the spotify API does not include a preview link, redirect users to the album 
+                        if (preview === null ){
+                        preview =  ("Preview unavailable. Copy the following link into a browser to view the album: " + response.tracks.items[i].album.uri) ;
+                        } else {
+                            preview = response.tracks.items[i].preview_url;
+                        }
+
+                        // Stores data from the Spotify API 
+                        var spotifySearch = 
+                            "\n" + "\n Artist(s): " + response.tracks.items[i].artists[0].name  +
                             "\n Song Title: " + response.tracks.items[i].name + 
                             "\n Album Title: " + response.tracks.items[i].album.name +
-                            "\n Listen Here: " + preview;
-                    
+                            "\n Listen Here: " + preview + "\n" + "\n";
 
-                            console.log(spotifySearch);
-                        }
-                    })
-            
-                    .catch(function(err) {
-                        console.log(err);
-                    });
-                }
-           
+                        // Logs and separates the song data colorfully with Chalk
+                        log( chalk.cyanBright.bold("----------------------------------------------------------------------------------------------------------------------------") + chalk.cyan(spotifySearch) + chalk.cyanBright.bold("----------------------------------------------------------------------------------------------------------------------------") + "\n");
+
+                        // Appends the song's information to the log.txt file 
+                        fs.appendFileSync("log.txt", spotifySearch, (err) => {
+                           
+                            if (err) throw err;
+        
+                        });
+                    }
+                })
+        
+                .catch(function(err) {
+                    log(err);
+                });
+        
             }
+        }
 
-    // 3. If no song is provided then your program will default to "The Sign" by Ace of Base.
-
-
-    // 4. node liri.js movie-this '<movie name here>'
-        // This will output the following information to your terminal/bash window:
-        // 1. Title of the movie.
-        // 2. Year the movie came out.
-        // 3. IMDB Rating of the movie.
-        // 4. Rotten Tomatoes Rating of the movie.
-        // 5. Country where the movie was produced.
-        // 6. Language of the movie.
-        // 7. Plot of the movie.
-        // 8. Actors in the movie.
-
+        // node liri.js movie-this '<movie name here>'
         function movieInfo(input) {
             
+            // If no input data has been entered... default to Mr. Nobody
             if(!input){
-                axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&apikey=trilogy").then(function(response){
-                // console.log(response.data); 
 
-                var movieSearch = "=================================================================================================================================" + 
-                "\n" + "\n If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/" + ". It's on Netflix!" + "\n" +
-                "\n Movie Title: " + (response.data.Title) +
-                "\n Plot: " + (response.data.Plot) + 
-                "\n Actors: " + (response.data.Actors) + 
-                "\n IMDB Rating: " + (response.data.imdbRating) +
-                "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
-                "\n Language(s): " + (response.data.Language) + 
-                "\n Release Date: " + (response.data.Released) + 
-                "\n Production Location(s): " + (response.data.Country);
-        
-                console.log(movieSearch);
+                axios.get("http://www.omdbapi.com/?t=Mr.+Nobody&apikey=trilogy").then(function(response){
+                // log(response.data); 
+
+                    // Stores data from the omdb API 
+                    var movieSearch = 
+                        "\n" + "\n If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/" + ". It's on Netflix!" + "\n" +
+                        "\n Movie Title: " + (response.data.Title) +
+                        "\n Plot: " + (response.data.Plot) + 
+                        "\n Actors: " + (response.data.Actors) + 
+                        "\n IMDB Rating: " + (response.data.imdbRating) +
+                        "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
+                        "\n Release Date: " + (response.data.Released) + 
+                        "\n Language(s): " + (response.data.Language) + 
+                        "\n Production Location(s): " + (response.data.Country) + "\n" + "\n";
+
+                    
+                    log( chalk.magentaBright.bold("----------------------------------------------------------------------------------------------------------------------------") + chalk.magentaBright(movieSearch) + chalk.magentaBright.bold("----------------------------------------------------------------------------------------------------------------------------") + "\n");
+                    
+                    // Appends the movie's information to the log.txt file 
+                    fs.appendFileSync("log.txt", movieSearch, (err) => {
+                        
+                        if (err) throw err;
+                    
+                    });
 
                 })
-               
+              
+            // If input data is entered... run the following code    
             } else {
-
+                
                 axios.get("http://www.omdbapi.com/?t=" + input + "&apikey=trilogy").then(function(response){
-                console.log(response.data); 
+                // log(response.data); 
+ 
+                    // Stores data from the omdb API 
+                    var movieSearch = 
+                        "\n" + "\n Movie Title: " + (response.data.Title) +
+                        "\n" + "\n Plot: " + (response.data.Plot) + 
+                        "\n Actors: " + (response.data.Actors) + 
+                        "\n IMDB Rating: " + (response.data.imdbRating) +
+                        "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
+                        "\n Release Date: " + (response.data.Released) + 
+                        "\n Language(s): " + (response.data.Language) + 
+                        "\n Production Location(s): " + (response.data.Country) + "\n" + "\n";
 
-                var movieSearch = "=================================================================================================================================" + 
+                     // Logs and separates the movie data colorfully with Chalk
+                    log( chalk.magentaBright.bold("----------------------------------------------------------------------------------------------------------------------------") + chalk.magentaBright(movieSearch) + chalk.magentaBright.bold("----------------------------------------------------------------------------------------------------------------------------") + "\n");
+                    
+                    // Appends the movie's information to the log.txt file 
+                    fs.appendFileSync("log.txt", movieSearch, (err) => {
+                        // throws an error, you could also catch it here
+                        if (err) throw err;
+                    
+                    });
 
-                "\n" + "\n Movie Title: " + (response.data.Title) +
-                "\n" + "\n Plot: " + (response.data.Plot) + 
-                "\n Actors: " + (response.data.Actors) + 
-                "\n IMDB Rating: " + (response.data.imdbRating) +
-                "\n Rotten Tomatoes Rating: " + (response.data.Ratings[1].Value) +
-                "\n Language(s): " + (response.data.Language) + 
-                "\n Release Date: " + (response.data.Released) + 
-                "\n Production Location(s): " + (response.data.Country) + "\n";
-        
-                console.log(movieSearch);
                 })
 
                 .catch(function(err) {
-                    console.log(err);
+                    log(err);
                 });
-            }
+               
+            } 
         }
-     
-    // 5. If the user doesn't type a movie in, the program will output data for the movie 'Mr. Nobody.'
-        // 1. If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
-        // 2. It's on Netflix!
 
-    // 6. node liri.js do-what-it-says
-        // Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
-        // 1. It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt.
-        // 2. Edit the text in random.txt to test out the feature for movie-this and concert-this.
+    // node liri.js do-what-it-says
+        function showInfo(){ 
 
-// ------ BONUS ------ //
-    // 1. In addition to logging the data to your terminal/bash window, output the data to a .txt file called log.txt.
-    // 2. Make sure you append each command you run to the log.txt file.
-    // 3. Do not overwrite your file each time you run a command.
+            var dataArr;
+
+            // Appends a band for the concert-this function & a movie for the movie-this function to the random.text file
+            fs.appendFileSync("random.text", ",concert-this,The 1975,movie-this,Catch Me If You Can", "utf8", function(err) {
+                if (err) {
+                    return log(err);
+                }
+                // log("movie-this was updated!")
+            })
+
+            // Reads the random.text file 
+            fs.readFile("random.text", "utf8", function(err, data) {
+                if (err) {
+                    return log(err);
+                }
+                // Splits the option / input data  
+                dataArr = data.split(',');
+                // Identifies the index of each item in the arr and assigns them as option or input so they can be run by the corresponding command.
+                userInput(dataArr[0], dataArr[1]);
+                userInput(dataArr[2], dataArr[3]);
+                userInput(dataArr[4], dataArr[5]);
+            })
+        }
