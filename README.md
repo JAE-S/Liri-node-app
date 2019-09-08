@@ -21,7 +21,7 @@ Liri is a CLI app that serves as a Language Interpretation and Recognition Inter
             - OMDB: for movies
 
     - The fourth command will edit the text in random.txt: 
-        - Liri ill take the text inside of random.txt and then use it to call one of LIRI's commands.
+        - Liri will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
     ### Technology Used
 
