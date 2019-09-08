@@ -1,0 +1,745 @@
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Jamsil Arena
+ * Venue Location: Songpa-gu, South Korea
+ * Date of the Event: Friday, September 6, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: AsiaWorld-Expo
+ * Venue Location: Sha Tau Kok Tan Ka, Hong Kong
+ * Date of the Event: Sunday, September 8, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: SM Mall Of Asia
+ * Venue Location: Manila, Philippines
+ * Date of the Event: Wednesday, September 11, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Thunder Dome
+ * Venue Location: Amphoe Pak Kret, Thailand
+ * Date of the Event: Friday, September 13, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Thunder Dome
+ * Venue Location: Amphoe Pak Kret, Thailand
+ * Date of the Event: Saturday, September 14, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: The Star Theatre
+ * Venue Location: Singapore, Singapore
+ * Date of the Event: Monday, September 16, 2019 8:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Helipad Parking Ground
+ * Venue Location: Kota Jakarta Pusat, Indonesia
+ * Date of the Event: Sunday, September 29, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Pitchfork Music Festival Paris
+ * Venue Location: Paris, France
+ * Date of the Event: Saturday, November 2, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: BB&T Pavilion
+ * Venue Location: Camden, United States
+ * Date of the Event: Saturday, November 16, 2019 7:30 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: BB&T Pavilion
+ * Venue Location: Camden, United States
+ * Date of the Event: Sunday, November 17, 2019 8:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: PNC Arena
+ * Venue Location: Raleigh, United States
+ * Date of the Event: Tuesday, November 19, 2019 7:30 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Bon Secours Wellness Arena
+ * Venue Location: Greenville, United States
+ * Date of the Event: Wednesday, November 20, 2019 7:30 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Riptide Music Festival
+ * Venue Location: Fort Lauderdale, United States
+ * Date of the Event: Saturday, November 23, 2019 6:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: MIDFLORIDA Credit Union Amphitheatre
+ * Venue Location: Tampa, United States
+ * Date of the Event: Sunday, November 24, 2019 5:30 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Kiefer University of New Orleans Lakefront Arena
+ * Venue Location: New Orleans, United States
+ * Date of the Event: Tuesday, November 26, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: 1stBANK Center
+ * Venue Location: Broomfield, United States
+ * Date of the Event: Sunday, December 1, 2019 7:30 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Pechanga Arena San Diego
+ * Venue Location: San Diego, United States
+ * Date of the Event: Thursday, December 5, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: WaMu Theater
+ * Venue Location: Seattle, United States
+ * Date of the Event: Tuesday, December 10, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The 1975
+ * Venue Name: Indiana Farmers Coliseum
+ * Venue Location: Indianapolis, United States
+ * Date of the Event: Friday, December 13, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Ace of Base
+ * Song Title: The Sign 
+ * Album Title: The Sign (US Album) [Remastered]
+ * Listen Here: https://p.scdn.co/mp3-preview/b176774bc04182501c2d5d201afda143b1193f31?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): The 1975
+ * Song Title: Robbers
+ * Album Title: The 1975 (Deluxe Version)
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:0mkOUedmYlOzCC4tOm2v0c
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: Hang Me Up To Dry
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): The 1975
+ * Song Title: Robbers
+ * Album Title: The 1975
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:33ZqJmmqFE8Z7Ak1Lxbnfb
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: We Used To Vacation
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: Hospital Beds
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| MOVIE-THIS |-------------------------------------------------------------------------------------------------------------
+
+ If you haven't watched 'Mr. Nobody,' then you should: http://www.imdb.com/title/tt0485947/
+
+ It's on Netflix!
+
+ * Movie Title: Mr. Nobody
+ * Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+
+ * Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+ * IMDB Rating: 7.8
+ * Rotten Tomatoes Rating: 67%
+ * Release Date: 26 Sep 2013
+ * Language(s): English, Mohawk
+ * Production Location(s): Belgium, Germany, Canada, France, USA, UK
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| MOVIE-THIS |-------------------------------------------------------------------------------------------------------------
+
+ * Movie Title: Catch Me If You Can
+ * Plot: A seasoned FBI agent pursues Frank Abagnale Jr. who, before his 19th birthday, successfully forged millions of dollars' worth of checks while posing as a Pan Am pilot, a doctor, and a legal prosecutor.
+
+ * Actors: Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen
+ * IMDB Rating: 8.1
+ * Rotten Tomatoes Rating: 95%
+ * Release Date: 25 Dec 2002
+ * Language(s): English, French
+ * Production Location(s): USA, Canada
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| MOVIE-THIS |-------------------------------------------------------------------------------------------------------------
+
+ * Movie Title: Big Daddy
+ * Plot: A lazy law school grad adopts a kid to impress his girlfriend, but everything doesn't go as planned and he becomes the unlikely foster father.
+
+ * Actors: Adam Sandler, Joey Lauren Adams, Jon Stewart, Cole Sprouse
+ * IMDB Rating: 6.4
+ * Rotten Tomatoes Rating: 40%
+ * Release Date: 25 Jun 1999
+ * Language(s): English, Italian
+ * Production Location(s): USA
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: VAS LIVE
+ * Venue Location: Shanghai, China
+ * Date of the Event: Friday, September 6, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: MoM LiveHouse
+ * Venue Location: Hong Kong, Hong Kong
+ * Date of the Event: Saturday, September 7, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Decline
+ * Venue Location: Singapore, Singapore
+ * Date of the Event: Monday, September 9, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: LidoConnect
+ * Venue Location: Bangkok, Thailand
+ * Date of the Event: Tuesday, September 10, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Karpos Live
+ * Venue Location: Manila, Philippines
+ * Date of the Event: Thursday, September 12, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Bastille Sounds Festival
+ * Venue Location: Paris, France
+ * Date of the Event: Thursday, September 19, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Bastille Sounds Festival
+ * Venue Location: Paris, France
+ * Date of the Event: Friday, September 20, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Bastille Sounds Festival
+ * Venue Location: Paris, France
+ * Date of the Event: Saturday, September 21, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Kelder Paradiso
+ * Venue Location: Amsterdam, Netherlands
+ * Date of the Event: Monday, September 23, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Austin City Limits Music Festival
+ * Venue Location: Austin, United States
+ * Date of the Event: Sunday, October 6, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Austin City Limits Music Festival
+ * Venue Location: Austin, United States
+ * Date of the Event: Sunday, October 6, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: 191 Toole
+ * Venue Location: Tucson, United States
+ * Date of the Event: Wednesday, October 9, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: La Santa Modern Cantina
+ * Venue Location: Santa Ana, United States
+ * Date of the Event: Thursday, October 10, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Observatory North Park
+ * Venue Location: San Diego, United States
+ * Date of the Event: Friday, October 11, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Wiltern
+ * Venue Location: Los Angeles, United States
+ * Date of the Event: Saturday, October 12, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Fillmore
+ * Venue Location: San Francisco, United States
+ * Date of the Event: Monday, October 14, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Soho Restaurant & Music Club
+ * Venue Location: Santa Barbara, United States
+ * Date of the Event: Tuesday, October 15, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Bunkhouse Saloon
+ * Venue Location: Las Vegas, United States
+ * Date of the Event: Thursday, October 17, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Complex
+ * Venue Location: Salt Lake City, United States
+ * Date of the Event: Saturday, October 19, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Fox Theatre
+ * Venue Location: Boulder, United States
+ * Date of the Event: Sunday, October 20, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Waiting Room Lounge
+ * Venue Location: Omaha, United States
+ * Date of the Event: Monday, October 21, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Thalia Hall
+ * Venue Location: Chicago, United States
+ * Date of the Event: Tuesday, October 22, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Bishop
+ * Venue Location: Bloomington, United States
+ * Date of the Event: Thursday, October 24, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Stache
+ * Venue Location: Grand Rapids, United States
+ * Date of the Event: Friday, October 25, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Phoenix Concert Theatre
+ * Venue Location: Toronto, Canada
+ * Date of the Event: Sunday, October 27, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Haunt
+ * Venue Location: Ithaca, United States
+ * Date of the Event: Tuesday, October 29, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Warsaw
+ * Venue Location: Brooklyn, United States
+ * Date of the Event: Wednesday, October 30, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Ottobar
+ * Venue Location: Baltimore, United States
+ * Date of the Event: Friday, November 1, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Spirit Hall
+ * Venue Location: Pittsburgh, United States
+ * Date of the Event: Saturday, November 2, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: A&R Music Bar
+ * Venue Location: Columbus, United States
+ * Date of the Event: Sunday, November 3, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Taft Theatre
+ * Venue Location: Cincinnati, United States
+ * Date of the Event: Monday, November 4, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Basement East
+ * Venue Location: Nashville, United States
+ * Date of the Event: Wednesday, November 6, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Grey Eagle
+ * Venue Location: Asheville, United States
+ * Date of the Event: Friday, November 8, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Motorco Music Hall
+ * Venue Location: Durham, United States
+ * Date of the Event: Saturday, November 9, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Loft
+ * Venue Location: Atlanta, United States
+ * Date of the Event: Sunday, November 10, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Jack Rabbits
+ * Venue Location: Jacksonville, United States
+ * Date of the Event: Tuesday, November 12, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Crowbar
+ * Venue Location: Tampa, United States
+ * Date of the Event: Wednesday, November 13, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: The Beacham
+ * Venue Location: Orlando, United States
+ * Date of the Event: Thursday, November 14, 2019 7:00 PM
+
+--------------------------------------------------------------------
+
+ -| CONCERT-THIS |---------------------------------------------------
+
+ * Artist: The Japanese House
+ * Venue Name: Corona Capital Festival
+ * Venue Location: Mexico City, Mexico
+ * Date of the Event: Saturday, November 16, 2019 12:00 AM
+
+--------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Backstreet Boys
+ * Song Title: I Want It That Way
+ * Album Title: The Hits--Chapter One
+ * Listen Here: https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Backstreet Boys
+ * Song Title: I Want It That Way
+ * Album Title: Millennium
+ * Listen Here: https://p.scdn.co/mp3-preview/b8c2410a5acb68b462be6ac85f1312430e2b149c?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Mick Jensen
+ * Song Title: I Want It That Way
+ * Album Title: I Want It That Way
+ * Listen Here: https://p.scdn.co/mp3-preview/f8181f66713983fab073e133e23c741acbe00d75?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Anthem Lights
+ * Song Title: I Want It That Way
+ * Album Title: Covers Part IV
+ * Listen Here: https://p.scdn.co/mp3-preview/4a163fbfa2dbbe4433f277e0e7395dca656364f5?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Backstreet Boys
+ * Song Title: I Want It That Way - Reimagined
+ * Album Title: I Want It That Way (Reimagined)
+ * Listen Here: https://p.scdn.co/mp3-preview/7f612d6ba66571500e981e74bb36e14b9906be77?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| MOVIE-THIS |-------------------------------------------------------------------------------------------------------------
+
+ * Movie Title: Cape Fear
+ * Plot: A convicted rapist, released from prison after serving a fourteen-year sentence, stalks the family of the lawyer who originally defended him.
+
+ * Actors: Robert De Niro, Nick Nolte, Jessica Lange, Juliette Lewis
+ * IMDB Rating: 7.3
+ * Rotten Tomatoes Rating: 75%
+ * Release Date: 15 Nov 1991
+ * Language(s): English
+ * Production Location(s): USA
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Ace of Base
+ * Song Title: The Sign 
+ * Album Title: The Sign (US Album) [Remastered]
+ * Listen Here: https://p.scdn.co/mp3-preview/b176774bc04182501c2d5d201afda143b1193f31?cid=caf6899c12d343aaa010f58c8e7874d2
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): The 1975
+ * Song Title: Robbers
+ * Album Title: The 1975 (Deluxe Version)
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:0mkOUedmYlOzCC4tOm2v0c
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: Hang Me Up To Dry
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): The 1975
+ * Song Title: Robbers
+ * Album Title: The 1975
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:33ZqJmmqFE8Z7Ak1Lxbnfb
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: We Used To Vacation
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ -| SPOTIFY-THIS-SONG |------------------------------------------------------------------------------------------------------
+
+ * Artist(s): Cold War Kids
+ * Song Title: Hospital Beds
+ * Album Title: Robbers & Cowards
+ * Listen Here: Preview unavailable. To view the album, copy the link below into a browser.
+ >> spotify:album:1LTbo93CjLo48yNP8Ysaz5
+
+-----------------------------------------------------------------------------------------------------------------------------
