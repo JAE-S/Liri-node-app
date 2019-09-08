@@ -23,7 +23,7 @@ Liri is a CLI app that serves as a Language Interpretation and Recognition Inter
     - The fourth command will edit the text in random.txt: 
         - Liri will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
-    ### Technology Used
+   ### Technology Used
 
     - The Axios node package was used to retrieve data from the APIs listed above 
     - Moment was used to format dates 
