@@ -35,6 +35,4 @@ Liri is a CLI app that serves as a Language Interpretation and Recognition Inter
 
 The video below shows a breakdown of the code and Liri in action. To skip to Liri in action begin at 2:10. This video was created using after effects. 
 
-<video width="100%" height="auto" controls>
-<source src="liri_bot(converted).mov" type="video/mp4">
-<video>
+[![Liri Bot Demo Video](http://img.youtube.com/vi/auto2MgNMTs/0.jpg)](http://www.youtube.com/watch?v=auto2MgNMTs "Liri Bot Demo Video")
