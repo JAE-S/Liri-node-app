@@ -1,4 +1,4 @@
-// Get and Set Environmental Varibales to the Global process.env object
+// Get and Set Environmental Variables to the Global process.env object
 require("dotenv").config();
 
 // File System 

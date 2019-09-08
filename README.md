@@ -27,7 +27,7 @@ Liri is a CLI app that serves as a Language Interpretation and Recognition Inter
 
     - The Axios node package was used to retrieve data from the APIs listed above 
     - Moment was used to format dates 
-    - Dotenv was used to get and set Environmental Varibales to the Global process.env object
+    - Dotenv was used to get and set Environmental Variables to the Global process.env object
     - Chalk was used to colorize command line arguments 
     - Wrap-Ansi was used to wrap text in the command line 
 
